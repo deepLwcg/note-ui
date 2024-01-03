@@ -22,3 +22,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+
+.eslintcache
+report.html
+
+yarn.lock
+.pnpm-error.log*
+.pnpm-debug.log
+tests/**/coverage/
+
+# Editor directories and files
+tsconfig.tsbuildinfo
