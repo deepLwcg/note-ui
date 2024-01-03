@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineOptions({
-  name: 'App',
+  name: 'Login',
 });
 </script>
 
 <template>
-  <router-view />
+  <div class="text-9xl">login</div>
 </template>
