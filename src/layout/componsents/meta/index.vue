@@ -23,7 +23,7 @@ defineOptions({
   font-weight: bold;
 }
 .site-name a {
-  color: #1e9eb3;
+  color: var(--card-text-color-main);
 }
 .site-description {
   font-size: 1rem;

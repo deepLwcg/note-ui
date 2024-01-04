@@ -16,7 +16,7 @@ defineOptions({
 
 <style lang="scss" scoped>
 .layout-right-pic {
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 
 .right-img {

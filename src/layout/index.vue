@@ -10,7 +10,7 @@ defineOptions({
 
 <template>
   <div class="common-layout">
-    <el-container class="gap-6">
+    <el-container class="gap-7">
       <el-aside class="left"><left-sidebar /></el-aside>
       <el-main class="main">
         <router-view />
@@ -23,9 +23,10 @@ defineOptions({
 
 <style scoped lang="scss">
 .common-layout {
-  max-width: 1336px;
+  max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 30px;
 }
 .common-layout .right {
   align-self: flex-start;
@@ -34,18 +35,20 @@ defineOptions({
   overflow: visible;
   position: sticky;
   top: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .common-layout .left {
   align-self: flex-start;
   width: auto;
   max-width: 15%;
+  overflow: visible;
   position: sticky;
   top: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .common-layout .main {
   width: 100%;
-  padding: 50px 0;
+  padding: 40px 0;
+  overflow: visible;
 }
 </style>

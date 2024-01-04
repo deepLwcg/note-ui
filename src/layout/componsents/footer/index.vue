@@ -34,7 +34,7 @@ defineOptions({
   display: block;
   height: 3px;
   width: 50px;
-  background: #505050;
+  background: var(--body-text-color);
   margin-bottom: 20px;
 }
 
@@ -50,12 +50,12 @@ defineOptions({
 }
 
 .layout-footer .power-by {
-  color: #505050;
+  color: var(--body-text-color);
   font-weight: 400;
   font-size: 0.7rem;
 }
 
 .layout-footer .power-by a {
-  color: #505050;
+  color: var(--body-text-color);
 }
 </style>

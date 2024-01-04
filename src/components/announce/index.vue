@@ -14,16 +14,16 @@ defineOptions({
 .announce {
   padding-left: 20%;
   padding-right: 20%;
-  background: #fff;
+  background: var(--card-background);
   width: 100%;
   height: auto;
   box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.04),
     0 2px 6px rgba(0, 0, 0, 0.04),
     0 0 1px rgba(0, 0, 0, 0.04);
-  font-size: 0.8rem;
+  font-size: 0.91rem;
   border-radius: 27px;
-  color: #34495e;
+  color: var(--card-text-color-main);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -33,7 +33,7 @@ const input = ref('');
 .layout-search .el-input {
   padding: 25px 25px 8px 15px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--card-background);
   border-radius: 27px;
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.04),

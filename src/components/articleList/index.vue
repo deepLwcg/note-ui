@@ -126,7 +126,7 @@ defineOptions({
 .article-item {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--card-background);
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.04),
     0 0 2px rgba(0, 0, 0, 0.06),
@@ -194,11 +194,11 @@ defineOptions({
 .article-title {
   font-weight: 600;
   margin: 0;
-  color: #34495e;
+  color: var(--card-text-color-main);
   font-size: 1.4rem;
 }
 .article-title a {
-  color: #34495e;
+  color: var(--card-text-color-main);
 }
 .article-footer {
   display: flex;

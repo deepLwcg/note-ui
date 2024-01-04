@@ -28,11 +28,12 @@ defineOptions({
 }
 .el-icon {
   font-size: 2rem;
+  color: var(--body-text-color);
 }
 .title {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #505050;
+  color: var(--body-text-color);
   margin-bottom: 10px;
 }
 .layout-tags .body {
@@ -41,14 +42,14 @@ defineOptions({
   gap: 10px;
 }
 .body-item {
-  background: #fff;
+  background: var(--card-background);
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.04),
     0 0 2px rgba(0, 0, 0, 0.06),
     0 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 6px;
   padding: 8px 20px;
-  color: #34495e;
+  color: var(--card-text-color-main);
   font-size: 0.8rem;
   transition: box-shadow 0.3s ease;
 }

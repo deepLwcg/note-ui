@@ -19,6 +19,6 @@ defineOptions({
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 </style>

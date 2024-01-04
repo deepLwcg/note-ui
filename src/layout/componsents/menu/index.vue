@@ -86,7 +86,7 @@ function openMenu(href: string) {
   flex-direction: column;
   overflow-y: auto;
   flex-grow: 1;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   border-radius: 10px;
   align-items: flex-end;
   display: flex;
@@ -106,7 +106,7 @@ function openMenu(href: string) {
   display: inline-flex;
   align-items: center;
   gap: 40px;
-  color: #6f6f6f;
+  color: var(--body-text-color);
   font-size: 0.95rem;
 }
 </style>

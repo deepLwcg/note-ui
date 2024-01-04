@@ -16,6 +16,8 @@ import './style/tailwind.css';
 
 import 'element-plus/dist/index.css';
 
+import 'element-plus/theme-chalk/dark/css-vars.css';
+
 const app = createApp(App);
 
 // // 自定义指令

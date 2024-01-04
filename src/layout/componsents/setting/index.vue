@@ -1,20 +1,45 @@
 <script setup lang="ts">
+import darkModeIcon from '@/assets/darkMode.svg';
+import lightModeIcon from '@/assets/dayMode.svg';
+
+import { useDark } from '@pureadmin/utils';
+const { isDark, toggleDark } = useDark();
+
+import { ref } from 'vue';
 defineOptions({
   name: 'LayoutSetting',
 });
+
+const modeIcon = ref(darkModeIcon);
+const title = ref('暗色模式');
+
+const changeTheme = () => {
+  toggleDark();
+  if (isDark.value) {
+    title.value = '暗色模式';
+    modeIcon.value = darkModeIcon;
+  } else {
+    title.value = '日间模式';
+    modeIcon.value = lightModeIcon;
+  }
+};
+
+const changeMode = () => {
+  changeTheme();
+};
 </script>
 
 <template>
   <li class="layout-setting">
-    <a href="/">
+    <a href="javascript:" @click="changeMode">
       <el-image
-        src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+        :src="modeIcon"
         lazy
         fit="cover"
         alt="首页"
         style="height: 20px; width: 20px"
       />
-      <span>暗色模式</span>
+      <span>{{ title }}</span>
     </a>
   </li>
 </template>
