@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import LeftSidebar from '@/layout/leftSidebar.vue';
 import RightSidebar from '@/layout/rightSidebar.vue';
+import LayoutFooter from '@/layout/componsents/footer/index.vue';
 
 defineOptions({
   name: 'Layout',
@@ -11,7 +12,10 @@ defineOptions({
   <div class="common-layout">
     <el-container class="gap-6">
       <el-aside class="left"><left-sidebar /></el-aside>
-      <el-main class="main"> <router-view /></el-main>
+      <el-main class="main">
+        <router-view />
+        <layout-footer />
+      </el-main>
       <el-aside class="right"><right-sidebar /></el-aside>
     </el-container>
   </div>

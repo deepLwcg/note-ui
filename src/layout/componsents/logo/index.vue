@@ -5,9 +5,7 @@ defineOptions({
   name: 'LayoutLogo',
 });
 
-const url = ref(
-  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-);
+const url = ref('https://www.yajienet.cn/upload/46605822.jpg');
 </script>
 
 <template>
@@ -44,8 +42,8 @@ const url = ref(
   border-radius: 100%;
   background-color: #fff;
   box-shadow:
-    0px 10px 20px rgba(0, 0, 0, 0.04),
-    0px 2px 6px rgba(0, 0, 0, 0.04),
-    0px 0px 1px rgba(0, 0, 0, 0.04);
+    0 10px 20px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.04),
+    0 0 1px rgba(0, 0, 0, 0.04);
 }
 </style>
