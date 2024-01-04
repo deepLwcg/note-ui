@@ -23,6 +23,6 @@ defineOptions({
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 15px;
 }
 </style>
