@@ -6,4 +6,29 @@
 html,body, #app  {
   margin: 0;
   padding: 0;
+  background: #f5f5fa;
+}
+
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+.layout-search .el-input__wrapper {
+  box-shadow: none !important;
+}
+
+.layout-search input::-webkit-input-placeholder{
+  color: #7d7d7d;
+}
+.layout-search input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color: #7d7d7d;
+}
+.layout-search input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color: #7d7d7d;
+}
+.layout-search input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+  color: #7d7d7d;
 }
