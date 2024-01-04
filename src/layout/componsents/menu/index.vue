@@ -1,47 +1,79 @@
 <script setup lang="ts">
 import LayoutSetting from '@/layout/componsents/setting/index.vue';
+import { Menu } from '@/layout/componsents/menu/types.ts';
+import menuIcon from '@/assets/menu.svg';
+import documentIcon from '@/assets/document.svg';
+import documentManagementIcon from '@/assets/documentManagement.svg';
+import exploringSpaceIcon from '@/assets/exploringSpace.svg';
+import popularizationOfScienceIcon from '@/assets/popularizationOfScience.svg';
+import recommendationIcon from '@/assets/recommendation.svg';
+import scienceAndTechnologyIcon from '@/assets/scienceAndTechnology.svg';
+import router from '@/router';
 
 defineOptions({
   name: 'LayoutMenu',
 });
+
+const menus: Menu[] = [
+  {
+    name: '首页',
+    icon: menuIcon,
+    href: '/',
+  },
+  {
+    name: '每日科普',
+    icon: popularizationOfScienceIcon,
+    href: '/',
+  },
+  {
+    name: '技术分享',
+    icon: scienceAndTechnologyIcon,
+    href: '/',
+  },
+  {
+    name: '知识乐章',
+    icon: documentIcon,
+    href: '/',
+  },
+  {
+    name: '实践探索',
+    icon: exploringSpaceIcon,
+    href: '/',
+  },
+  {
+    name: '资源推荐',
+    icon: recommendationIcon,
+    href: '/',
+  },
+  {
+    name: '文档归纳',
+    icon: documentManagementIcon,
+    href: '/',
+  },
+];
+
+function openMenu(href: string) {
+  router.push({
+    name: 'Categories',
+    query: {
+      categories: href,
+    },
+  });
+}
 </script>
 
 <template>
   <ol class="layout-menu">
-    <li>
-      <a href="/">
+    <li v-for="(item, index) in menus" :key="index">
+      <a href="javascript:" @click="openMenu(item.href)">
         <el-image
-          src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+          :src="item.icon"
           lazy
           fit="cover"
-          alt="首页"
+          :alt="item.name"
           style="height: 20px; width: 20px"
         />
-        <span>首页</span>
-      </a>
-    </li>
-    <li>
-      <a href="/">
-        <el-image
-          src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
-          lazy
-          fit="cover"
-          alt="首页"
-          style="height: 20px; width: 20px"
-        />
-        <span>每日科普</span>
-      </a>
-    </li>
-    <li>
-      <a href="/">
-        <el-image
-          src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
-          lazy
-          fit="cover"
-          alt="首页"
-          style="height: 20px; width: 20px"
-        />
-        <span>每日科普</span>
+        <span>{{ item.name }}</span>
       </a>
     </li>
     <layout-setting />
@@ -74,7 +106,7 @@ defineOptions({
   display: inline-flex;
   align-items: center;
   gap: 40px;
-  color: #888888;
-  font-size: 1.05rem;
+  color: #6f6f6f;
+  font-size: 0.95rem;
 }
 </style>

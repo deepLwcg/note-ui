@@ -2,12 +2,12 @@
 import { Bicycle } from '@element-plus/icons-vue';
 
 defineOptions({
-  name: 'LayoutClassification',
+  name: 'LayoutCategories',
 });
 </script>
 
 <template>
-  <div class="layout-classification">
+  <div class="layout-categories">
     <div class="icon">
       <el-icon><Bicycle /></el-icon>
     </div>
@@ -23,7 +23,7 @@ defineOptions({
 </template>
 
 <style lang="scss" scoped>
-.layout-classification {
+.layout-categories {
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@ defineOptions({
   color: #505050;
   margin-bottom: 10px;
 }
-.layout-classification .body {
+.layout-categories .body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;

@@ -26,6 +26,6 @@ defineOptions({
   align-items: center;
   gap: 40px;
   color: #888888;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 </style>

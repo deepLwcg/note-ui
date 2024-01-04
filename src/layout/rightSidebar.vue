@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LayoutRightPic from '@/layout/componsents/rightpic/index.vue';
 import LayoutTags from '@/layout/componsents/tags/index.vue';
-import LayoutClassification from '@/layout/componsents/classification/index.vue';
+import LayoutClassification from '@/layout/componsents/categories/index.vue';
 import LayoutSearch from '@/layout/componsents/search/index.vue';
 
 defineOptions({

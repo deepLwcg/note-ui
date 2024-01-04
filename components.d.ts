@@ -10,6 +10,7 @@ declare module 'vue' {
     Announce: typeof import('./src/components/announce/index.vue')['default']
     ArticleList: typeof import('./src/components/articleList/index.vue')['default']
     ArticlesList: typeof import('./src/components/articlesList/index.vue')['default']
+    Categories: typeof import('./src/components/categories/index.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
