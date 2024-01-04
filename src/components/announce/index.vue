@@ -1,0 +1,32 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'Announce',
+});
+</script>
+
+<template>
+  <div class="announce">
+    <h2>👋欢迎来到<strong style="color: #e99312">物联网技术分享</strong></h2>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.announce {
+  padding-left: 20%;
+  padding-right: 20%;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.04),
+    0 0 1px rgba(0, 0, 0, 0.04);
+  font-size: 0.8rem;
+  border-radius: 27px;
+  color: #34495e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+}
+</style>

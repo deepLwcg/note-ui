@@ -9,7 +9,7 @@ defineOptions({
 
 <template>
   <div class="common-layout">
-    <el-container class="gap-8">
+    <el-container class="gap-6">
       <el-aside class="left"><left-sidebar /></el-aside>
       <el-main class="main"> <router-view /></el-main>
       <el-aside class="right"><right-sidebar /></el-aside>
@@ -19,22 +19,29 @@ defineOptions({
 
 <style scoped lang="scss">
 .common-layout {
-  max-width: 1200px;
+  max-width: 1336px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
 }
-
 .common-layout .right {
+  align-self: flex-start;
   width: 100%;
-  max-width: 27%;
+  max-width: 22%;
   overflow: visible;
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
 }
 .common-layout .left {
+  align-self: flex-start;
   width: auto;
   max-width: 15%;
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
 }
 .common-layout .main {
   width: 100%;
+  padding: 50px 0;
 }
 </style>
